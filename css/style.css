@@ -1,0 +1,204 @@
+* {
+  font-family: 'Roboto 400', sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.welcome {
+  height: 85vh;
+  background: url(../images/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .welcome--subsite {
+    height: auto; }
+  .welcome__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 95px - 162px); }
+  .welcome__title {
+    margin: 0;
+    text-align: center;
+    font-size: 38px;
+    padding: 25px;
+    color: #fff;
+    text-transform: uppercase; }
+    .welcome__title--second-line {
+      padding: 10px;
+      color: #55BF95;
+      display: block; }
+    .welcome__title--h2 {
+      font-size: 92px;
+      color: #fff; }
+  .welcome__subtitle {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin: 0 auto;
+    display: block; }
+  .welcome__nav {
+    width: 100%;
+    background: #fff;
+    height: 95px; }
+    .welcome__nav--mobile {
+      display: none; }
+
+.section {
+  display: flex;
+  justify-content: center; }
+
+.image {
+  max-width: 100%; }
+
+.first {
+  background: #55BF95; }
+  .first__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .first__box {
+    background: #1e1e1e;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 20px 0; }
+  .first__box-title {
+    color: #777777;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 15px; }
+  .first__icon {
+    font-size: 128px !important;
+    color: #777; }
+
+.article {
+  width: 60%;
+  margin: 50px 0; }
+  .article__header {
+    color: #fff;
+    font-size: 57px;
+    text-align: center;
+    text-transform: uppercase; }
+    .article__header--third {
+      color: #55BF95; }
+  .article--third > p {
+    text-align: center; }
+  .article--fourth > p {
+    color: #fff; }
+
+.button {
+  padding: 30px;
+  display: block;
+  margin: 50px auto;
+  text-decoration: none;
+  width: 200px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background: #1e1e1e;
+  transition: all 500ms;
+  font-size: 25px; }
+  .button:hover {
+    background: #fff;
+    color: #1e1e1e; }
+
+.third__boxes {
+  display: flex;
+  justify-content: space-around; }
+.third__box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .third__box > p {
+    text-align: center; }
+.third__icon {
+  font-size: 128px !important; }
+
+.nav__menu {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto; }
+  .nav__menu--mobile {
+    display: none; }
+  .nav__menu .nav__item {
+    display: inline;
+    transition: all 300ms;
+    padding: 0 30px; }
+    .nav__menu .nav__item:hover {
+      background: #55BF95; }
+      .nav__menu .nav__item:hover > a {
+        color: #fff; }
+    .nav__menu .nav__item > a {
+      text-decoration: none;
+      color: #000;
+      line-height: 95px;
+      font-size: 25px;
+      transition: all 300ms; }
+
+.fourth {
+  background: url(../images/bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+.footer {
+  background: #000000;
+  padding: 50px; }
+  .footer__content {
+    display: flex;
+    justify-content: space-around; }
+  .footer__box {
+    width: 20%; }
+    .footer__box > p {
+      color: #fff;
+      text-align: center; }
+
+@media all and (max-width: 1245px) {
+  .nav__menu {
+    width: 80%; } }
+@media all and (max-width: 930px) {
+  .hamburger {
+    font-size: 52px !important;
+    display: block;
+    margin: 0 auto;
+    line-height: 95px !important;
+    cursor: pointer; }
+
+  .third__boxes, .first__boxes, .footer__content {
+    flex-direction: column;
+    align-items: center; }
+
+  .first__box, .third__box, .footer__box {
+    width: 100%; }
+
+  .welcome__title--h2 {
+    font-size: 52px; }
+
+  .article__header {
+    font-size: 37px; }
+
+  .welcome__nav {
+    display: none; }
+
+  .welcome__nav--mobile {
+    display: flex; }
+
+  .nav__menu--mobile {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: #fff;
+    top: 0;
+    justify-content: normal; }
+
+  .nav__item {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

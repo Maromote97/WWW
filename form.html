@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Company</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex">
+	<meta charset="utf-8">
+	<script src="form_check.js"></script> 
+	<link rel="stylesheet" href="form.css">
+</head>
+<body> <h1>Programista</h1> <h2>Kwestionariusz danych osobowych</h2> <form action="#" method="get"> <fieldset name="dane_osobowe"> 
+<p><i>Proszę wypełnić ten formularz. Obowiązkowe pola oznaczono znakiem </i> 
+<em>*</em>
+</p> 
+<label>Imię <em>*</em></label><input type="text" name="f_imie" /> <br/> 
+<label>Nazwisko <em>*</em></label><input type="text" name="f_nazwisko" /> <br/> 
+<label>Płeć <em>*</em></label> <input name="f_plec" value="f_k" checked type="radio" />kobieta <input name="f_plec" value="f_m" type="radio" />mężczyzna <br/>
+<label>Nazwisko panieńskie</label><input type="text" name="f_nazwisko_p"> <br/>
+<label>e-mail</label><input type="text" name="f_email" /> <br/> 
+<label>kod pocztowy</label><input type="text" name="f_kod" /> <br/> 
+<label>Ulica</label><input type="text" name="f_ulica"/> <br/> 
+<label>Miasto</label><input type="text" name="f_miasto" /> <br/> 
+<label>Pytanie</label><textarea rows="10" cols="25" name="uwagi"></textarea> <br/> </fieldset> 
+<input type="submit" name="submit" value="Wyślij formularz" onclick="return validate(this.form);">
+
+</body>
+</html>
